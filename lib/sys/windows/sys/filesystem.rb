@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'filesystem/constants'
 require_relative 'filesystem/functions'
 require_relative 'filesystem/helper'

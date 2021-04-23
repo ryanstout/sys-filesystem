@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'filesystem/constants'
 require_relative 'filesystem/structs'
 require_relative 'filesystem/functions'
@@ -291,9 +293,9 @@ module Sys
           OPT_NAMES.each do |key, val|
             if flags & key > 0
               if string.empty?
-                string << val
+                string += val
               else
-                string << ", #{val}"
+                string += ", #{val}"
               end
             end
             flags &= ~key
